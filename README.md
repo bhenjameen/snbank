@@ -5,4 +5,4 @@
 ##
 * Program is able to log user's session by creating a text document.
 ##
-* Program allows user to check Account Balance.
+* Program allows user to Create New Account and check Account Balance.
