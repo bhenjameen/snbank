@@ -38,11 +38,7 @@ def userValidation
     sleep 1.0
     print "Please input your USERNAME:  "
     usernameValidation = gets.chomp
-    puts
-    sleep 1.0
-    puts "..."
-    sleep 1.0
-    print "Please input your PASSWORD:  "
+    print "\nPlease input your PASSWORD:  "
     passwordValidation = gets.chomp
 
     File.open("staff.txt", "r") do |file|
@@ -60,6 +56,7 @@ end
 end
 
 
+#Staff Login Interface
 def userProgress
     puts "\nCREATE NEW BANK ACCOUNT:  (Press '1' and 'Enter' to create new Bank Account)"
     puts "CHECK ACCOUNT DETAILS:    (Press '2' and 'Enter' to see account details)"
@@ -78,6 +75,26 @@ def userProgress
         puts "You have made an invalid selection. \nPlease try again\n\n"
         userProgress
     end
+end
+
+
+def accountDetails
+    puts    
+    sleep 1.0
+    puts "..."
+    sleep 1.0
+    print "Please enter your account number:  "
+    STDIN.gets
+    puts "\n\nSee account details below\n\n"
+    File.open("customer.txt", "r") do |file|
+        puts file.read()
+    end
+    puts    
+    sleep 1.0
+    puts "..."
+    sleep 1.0
+    puts "\nWelcome Back. \nChoose your desired option"
+    userProgress
 end
 
 
