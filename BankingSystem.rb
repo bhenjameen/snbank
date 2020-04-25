@@ -5,6 +5,7 @@ def welcomeInterface
     puts "..."
     sleep 1.0
     puts "Welcome to the START.NG Banking app! \nWe make Banking fun for you!"
+
     puts ("\n" * 2)
     sleep 1.0
     puts "..."
@@ -12,7 +13,8 @@ def welcomeInterface
     puts "What would you like to do?. \nChoose your desired option."
     puts ("\n")
     sleep 1.0
-     puts "STAFF LOGIN:  (Press '1' and 'Enter' to log in as Staff)"
+ 
+    puts "STAFF LOGIN:  (Press '1' and 'Enter' to log in as Staff)"
     puts "CLOSE APP:    (Press '2' and 'Enter' to exit the app)"
     puts ("\n" * 2)
     response = gets.chomp
@@ -29,7 +31,6 @@ def welcomeInterface
 end
 
 
-#Password and Username check
 def userValidation
     puts
     sleep 1.0
@@ -55,7 +56,7 @@ end
 end
 
 
-#Staff Login section
+#Staff Login Interface
 def userProgress
     puts "\nCREATE NEW BANK ACCOUNT:  (Press '1' and 'Enter' to create new Bank Account)"
     puts "CHECK ACCOUNT DETAILS:    (Press '2' and 'Enter' to see account details)"
@@ -77,7 +78,6 @@ def userProgress
 end
 
 
-#Account Details section
 def accountDetails
     puts    
     sleep 1.0
@@ -98,7 +98,6 @@ def accountDetails
 end
 
 
-#Create Account section
 def createNewAccount
     sleep 1.0
     puts "\n\n..."
@@ -143,13 +142,11 @@ def createNewAccount
 end
 
 
-#App exit
 def closeApp
     puts "\n\nThank you for banking with us!"
 end
 
 
-#Invalid Login details
 def pinError
     puts
     sleep 1.0
